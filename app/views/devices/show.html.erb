@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+<h1>Device Info: </h1>
+<table>
+  <thead>
+    <tr>
+      <th>Device name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @device.device_name %></td>
+      </tr>
+  </tbody>
+</table>
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back Devices', devices_path %> |
+<%= link_to 'Back Games', games_path %>

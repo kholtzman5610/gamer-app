@@ -14,5 +14,26 @@
   </tbody>
 </table>
 
+
+<h1>Device Info:</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Device name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @devices = @game.devices %>
+    <% @devices.each do |o| %>
+      <tr>
+        <td><%= o.device_name %></td>
+        <td><%= link_to 'Edit', edit_device_path(o) %></td>
+        <td><%= link_to 'Destroy', o, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Device', new_device_path %> <br>
 <%= link_to 'Edit', edit_game_path(@game) %> |
 <%= link_to 'Back', games_path %>
