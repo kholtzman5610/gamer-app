@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Game name</th>
+      <th>Game name:</th>
     </tr>
   </thead>
 
@@ -19,7 +19,7 @@
 <table>
   <thead>
     <tr>
-      <th>Device name</th>
+      <th>Device name:</th>
     </tr>
   </thead>
   <tbody>
@@ -27,13 +27,14 @@
     <% @devices.each do |o| %>
       <tr>
         <td><%= o.device_name %></td>
-        <td><%= link_to 'Edit', edit_device_path(o) %></td>
-        <td><%= link_to 'Destroy', o, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_device_path(o), :class => "btn btn-danger btn-sm" %></td>
+        <td><%= link_to 'Destroy', o, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger btn-sm" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New Device', new_device_path %> <br>
-<%= link_to 'Edit', edit_game_path(@game) %> |
-<%= link_to 'Back', games_path %>
+
+<%= link_to 'New Device', new_device_path, :class => "btn btn-danger btn-sm" %> <br>
+<%= link_to 'Edit Game', edit_game_path(@game), :class => "btn btn-danger btn-sm" %> |
+<%= link_to 'Back Games', games_path, :class =>  "btn btn-danger btn-sm" %>
