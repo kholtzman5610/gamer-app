@@ -31,9 +31,9 @@
          color: $red;
          font-family: 'Merriweather', sans-serif;
   }
-  h1,
+
   h2 {
-         font-weight: bold;
+         color: $blue;
   }
   p {
          font-size: 16px;
@@ -42,15 +42,7 @@
   a:visited {
          color: $black;
   }
-  .jumbotron {
-         background: #0048CD;
-         color: $red;
-         text-align: center;
-         p {
-                 color: $red;
-                 font-size: 26px;
-         }
-  }
+
   .link {
          color: $red;
   }
@@ -74,4 +66,12 @@
          float: left;
          clear: both;
 
+  }
+
+  td {
+         color: $yellow;
+  }
+
+  li {
+         color: $yellow;
   }
