@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ * require font-awesome
+  */
+
+  @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+  @import "bootstrap";
+  @import "font-awesome";
+
+  $red: red;
+  $black: black;
+
+  .navbar {
+         margin-bottom: 0;
+         background: $black;
+  }
+  body {
+         background: $black;
+         color: $red;
+         font-family: 'Merriweather', sans-serif;
+  }
+
+  h2 {
+         color: $blue;
+  }
+  p {
+         font-size: 16px;
+         color: $red;
+  }
+  a:visited {
+         color: $black;
+  }
+
+  .link {
+         color: $red;
+  }
+  .btn-primary {
+         color: $red;
+         border-color: $red;
+         margin-bottom: 5px;
+  }
+  .btn-sm {
+         background-color: $red;
+         display: inline-block;
+  }
+  img,
+  video,
+  audio {
+         margin-top: 20px;
+         max-width: 80%;
+  }
+  caption {
+
+         float: left;
+         clear: both;
+
+  }
+
+  td {
+         color: $yellow;
+  }
+
+  li {
+         color: $yellow;
+  }

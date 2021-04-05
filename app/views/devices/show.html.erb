@@ -2,7 +2,7 @@
 <h1>Device Info: </h1>
 <table>
   <thead>
-    <tr>
+    <tr class="text-info">
       <th>Device name</th>
     </tr>
   </thead>
@@ -13,7 +13,26 @@
       </tr>
   </tbody>
 </table>
+<br>
 
-<%= link_to 'Edit', edit_device_path(@device) %> |
-<%= link_to 'Back Devices', devices_path %> |
-<%= link_to 'Back Games', games_path %>
+<table>
+  <thead>
+    <tr class="text-info">
+      <th>Game name:</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <% @game = @device.game %>
+        <td> <%= @game.game_name %> </td>
+        <td><%= link_to 'Edit', edit_game_path, :class => "btn btn-danger btn-sm" %></td>
+        <td><%= link_to 'Destroy', @game, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger btn-sm" %></td>
+      </tr>
+  </tbody>
+</table>
+
+<%= link_to 'New Game', new_game_path, :class => "btn btn-danger btn-sm" %> <br><br>
+<%= link_to 'Edit Device', edit_device_path(@device), :class => "btn btn-danger btn-sm" %> |
+<%= link_to 'Back Devices', devices_path, :class => "btn btn-danger btn-sm" %> |
+<%= link_to 'Back Games', games_path, :class => "btn btn-danger btn-sm" %>

@@ -2,8 +2,8 @@
   <strong>Device name:</strong>
   <%= device.device_name %>
   <div class="device-admin">
-    <%= link_to 'Edit', edit_device_path(device) %> |
-    <%= link_to "Delete", [device], method: :delete %>
+    <%= link_to 'Edit', edit_device_path(device), :class => "btn btn-danger btn-sm" %> |
+    <%= link_to "Delete", [device], method: :delete,:class => "btn btn-danger btn-sm" %>
   </div>
 </div>
 

@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="text-center display-2">Welcome, Gamers!</h1>
+  <p class="text-center font-weight-bold text-info">
+    Are you looking for gamers that play the same games as you and can play on the same devices with you?
+  </p>
+  <img class="mx-auto d-block" src="https://videoconsolasedutecno.files.wordpress.com/2015/04/evolution-of-video-games.png" alt="Evolution of Video Games">
+  <br><br>
+  <p class="text-center font-weight-bold text-warning">
+    Look no further and click the links below to find them!
+  </p>
+</div>
+
+<div class="text-center">
+  <%= button_to 'Current Devices', devices_path, :method => :get,  :class => "btn btn-danger btn-sm" %> <br>
+  <%= button_to 'Current Games', games_path, :method => :get,  :class => "btn btn-danger btn-sm"%>
+</div>
