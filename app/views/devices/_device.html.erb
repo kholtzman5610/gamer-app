@@ -1,0 +1,11 @@
+<div>
+  <strong>Device name:</strong>
+  <%= device.device_name %>
+  <div class="device-admin">
+    <%= link_to 'Edit', edit_device_path(device) %> |
+    <%= link_to "Delete", [device], method: :delete %>
+  </div>
+</div>
+
+<br><br>
+<br><br>
